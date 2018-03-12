@@ -1,2 +1,11 @@
-abc
-gunwo 123
+Skrypty powinny zawierać następujące polecenia:
+
+usuwanie wszystkich obiektów, które zostaną stworzone w skrypcie
+
+tworzenie tabel i więzów integralności między nimi
+
+tworzenie sekwencji do generowania kluczy głównych poszczególnych tabel
+
+tworzenie wyzwalaczy, które będą przypisywać w oparciu o sekwencje wartości dla kluczy głównych
+
+dodanie danych do poszczególnych tabel (10 wierszy do każdej tabeli)
