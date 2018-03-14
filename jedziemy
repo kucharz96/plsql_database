@@ -6,13 +6,13 @@ tworzenie tabel i więzów integralności między nimi:
 ////////////////////////////////////////////////////////////PACJENT////////////////////////////////////////////////////////////////////
 CREATE TABLE pacjent(
 pesel NUMBER(11) NOT NULL,
-imie VARCHAR(15) ,
-nazwisko VARCHAR(20) ,
-ulica NUMBER(20) ,
-numer_domu NUMBER(3) ,
+imie VARCHAR(15) NOT NULL ,
+nazwisko VARCHAR(20) NOT NULL ,
+ulica NUMBER(20) NOT NULL ,
+numer_domu NUMBER(3) NOT NULL ,
 numer_mieszkania VARCHAR(3),
-miejscowosc VARCHAR(20) ,
-kod_pocztowy VARCHAR(6) ,
+miejscowosc VARCHAR(20) NOT NULL ,
+kod_pocztowy VARCHAR(6) NOT NULL ,
 CONSTRAINT pk_pacjent PRIMARY KEY (pesel),
 CONSTRAINT check_pacjent CHECK (
 pesel LIKE '___________' AND
