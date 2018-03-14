@@ -1,0 +1,35 @@
+CREATE TRIGGER skierowanie_tr
+BEFORE INSERT ON skierowanie
+FOR EACH ROW
+BEGIN
+SELECT skierowanie_sq.NEXTVAL INTO :new.nr_skierowania FROM dual;
+END;
+/
+CREATE TRIGGER recepta_tr
+BEFORE INSERT ON recepta
+FOR EACH ROW
+BEGIN
+SELECT recepta_sq.NEXTVAL INTO :new.nr_recepty FROM dual;
+END;
+/
+CREATE TRIGGER wizyta_tr
+BEFORE INSERT ON wizyta
+FOR EACH ROW
+BEGIN
+SELECT wizyta_sq.NEXTVAL INTO :new.id_wizyty FROM dual;
+END;
+/
+CREATE TRIGGER wizyty_domowe_tr
+BEFORE INSERT ON wizyty_domowe
+FOR EACH ROW
+BEGIN
+SELECT wizyty_domowe_sq.NEXTVAL INTO :new.id_wizyty FROM dual;
+END;
+/
+CREATE TRIGGER cennik_tr
+BEFORE INSERT ON cennik_wizyt_domowych
+FOR EACH ROW
+BEGIN
+SELECT cennik_sq.NEXTVAL INTO :new.typ_wizyty FROM dual;
+END;
+/
