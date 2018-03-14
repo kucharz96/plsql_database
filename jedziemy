@@ -3,7 +3,7 @@ Skrypty powinny zawierać następujące polecenia:
 usuwanie wszystkich obiektów, które zostaną stworzone w skrypcie
 
 tworzenie tabel i więzów integralności między nimi:
-////////////////////////////////////////////////////////////PACJENT////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 CREATE TABLE pacjent(
 pesel NUMBER(11) NOT NULL,
 imie VARCHAR(15) NOT NULL ,
@@ -50,10 +50,76 @@ CONSTRAINT fk2_skierowanie FOREIGN KEY (pesel_pacjenta) REFERENCES pacjent(pesel
 CONSTRAINT check_skierowanie CHECK (pesel_pacjenta LIKE '___________' )
 );
 
+CREATE TABLE wizyta(
+id_wizyty INT NOT NULL,
+id_lekarza INT NOT NULL ,
+pesel_pacjenta NUMBER(11) NOT NULL ,
+data_godzina_wizyty TIMEStAMP DEFAULT SYSDATE,
+opis VARCHAR(200) NOT NULL,
+CONSTRAINT pk_wizyta PRIMARY KEY(id_wizyty),
+CONSTRAINT fk1_wizyta FOREIGN KEY (id_lekarza) REFERENCES lekarz(id_lekarza) ON DELETE CASCADE,
+CONSTRAINT fk2_wizyta FOREIGN KEY (pesel_pacjenta) REFERENCES pacjent(pesel) ON DELETE CASCADE,
+CONSTRAINT check_wizyta CHECK (pesel_pacjenta LIKE '___________' )
+);
+
+CREATE TABLE cennik_wizyt_domowych(
+typ_wizyty int NOT NULL,
+cena NUMBER(4,2) NOT NULL,
+CONSTRAINT pk_cennik PRIMARY KEY(typ_wizyty),
+CONSTRAINT check_cennik CHECK (cena > 0)
+);
+
+CREATE TABLE wizyty_domowe(
+id_wizyty INT NOT NULL,
+id_lekarza INT NOT NULL ,
+pesel_pacjenta NUMBER(11) NOT NULL ,
+data_godzina_wizyty TIMEStAMP DEFAULT SYSDATE,
+opis VARCHAR(200) NOT NULL,
+typ_wizyty INT NOT NULL,
+CONSTRAINT pk_wizyta_d PRIMARY KEY(id_wizyty),
+CONSTRAINT fk1_wizyta_d FOREIGN KEY (id_lekarza) REFERENCES lekarz(id_lekarza) ON DELETE CASCADE,
+CONSTRAINT fk2_wizyta_d FOREIGN KEY (pesel_pacjenta) REFERENCES pacjent(pesel) ON DELETE CASCADE,
+CONSTRAINT fk3_wizyta_d FOREIGN KEY (typ_wizyty) REFERENCES cennik_wizyt_domowych(typ_wizyty) ON DELETE CASCADE,
+CONSTRAINT check_wizyta_d CHECK (pesel_pacjenta LIKE '___________' )
+);
+
 
 
 
 tworzenie sekwencji do generowania kluczy głównych poszczególnych tabel
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+CREATE SEQUENCE pacjent_sq
+MINVALUE 0
+START WITH 0
+INCREMENT BY 1;
+
+CREATE SEQUENCE skierowanie_sq
+MINVALUE 0
+START WITH 0
+INCREMENT BY 1;
+
+CREATE SEQUENCE recepta_sq
+MINVALUE 0
+START WITH 0
+INCREMENT BY 1;
+
+CREATE SEQUENCE wizyta_sq
+MINVALUE 0
+START WITH 0
+INCREMENT BY 1;
+
+CREATE SEQUENCE wizyty_domowe_sq
+MINVALUE 0
+START WITH 0
+INCREMENT BY 1;
+
+CREATE SEQUENCE cennik_sq
+MINVALUE 0
+START WITH 0
+INCREMENT BY 1;
+
 
 tworzenie wyzwalaczy, które będą przypisywać w oparciu o sekwencje wartości dla kluczy głównych
 
