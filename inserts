@@ -1,0 +1,22 @@
+INSERT INTO pacjent VALUES ('60101131850','Eustachy','Dudek','Nad Brzegiem',116,'','Gdańsk','80-638');
+INSERT INTO pacjent VALUES ('61083043278','Augustyn','Nowakowski','Wrzesińska',82,4,'Poznań','61-021');
+INSERT INTO pacjent VALUES ('77031415260','Gabriela','Kowalska','Leśnych Skrzatów',65,1,'Poznań','60-193');
+INSERT INTO pacjent VALUES ('36122481500','Wisława','Piotrowska','Floriańska',112,3,'Rybnik','44-217');
+INSERT INTO pacjent VALUES ('64011474722','Grażyna','Ostrowska','Barei Stanisława',122,23,'Warszawa','03-141');
+INSERT INTO pacjent VALUES ('97020380052','Kacper','Dąbrowski','Jugosłowiańska',56,11,'Wrocław','51-112');
+INSERT INTO pacjent VALUES ('40100390663','Wiola','Adamczyk','Baczyńskiego',100,10,'Jasło','38-201');
+INSERT INTO pacjent VALUES ('75120134409','Kinga','Rutkowska','Pstrągowa',17,18,'Katowice','40-748');
+INSERT INTO pacjent VALUES ('87062835210','Ryszard','Kowalczyk','Piaskowa',123,'','Katowice','20-420');
+INSERT INTO pacjent VALUES ('81121188828','Konstancja','Kozłowska','Jęczmienna',14,'','Olsztyn','10-814');
+
+INSERT INTO cennik_wizyt_domowych(cena) VALUES (20.00);
+INSERT INTO cennik_wizyt_domowych(cena) VALUES (85.00);
+INSERT INTO cennik_wizyt_domowych(cena) VALUES (95.00);
+INSERT INTO cennik_wizyt_domowych(cena) VALUES (45.00);
+INSERT INTO cennik_wizyt_domowych(cena) VALUES (120.00);
+INSERT INTO cennik_wizyt_domowych(cena) VALUES (450.00);
+INSERT INTO cennik_wizyt_domowych(cena) VALUES (600.00);
+INSERT INTO cennik_wizyt_domowych(cena) VALUES (85.00);
+INSERT INTO cennik_wizyt_domowych(cena) VALUES (95.00);
+INSERT INTO cennik_wizyt_domowych(cena) VALUES (100.00);
+INSERT INTO cennik_wizyt_domowych(cena) VALUES (800.00);
