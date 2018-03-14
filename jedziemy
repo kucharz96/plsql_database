@@ -2,7 +2,30 @@ Skrypty powinny zawierać następujące polecenia:
 
 usuwanie wszystkich obiektów, które zostaną stworzone w skrypcie
 
-tworzenie tabel i więzów integralności między nimi
+tworzenie tabel i więzów integralności między nimi:
+////////////////////////////////////////////////////////////PACJENT////////////////////////////////////////////////////////////////////
+CREATE TABLE pacjent(
+pesel NUMBER(11) NOT NULL,
+imie VARCHAR(15) ,
+nazwisko VARCHAR(20) ,
+ulica NUMBER(20) ,
+numer_domu NUMBER(3) ,
+numer_mieszkania VARCHAR(3),
+miejscowosc VARCHAR(20) ,
+kod_pocztowy VARCHAR(6) ,
+CONSTRAINT pk_pacjent PRIMARY KEY (pesel),
+CONSTRAINT check_pacjent CHECK (
+pesel LIKE '___________' AND
+imie = INITCAP(imie) AND
+nazwisko = INITCAP(nazwisko) AND
+miejscowosc = INITCAP(miejscowosc) AND
+REGEXP_LIKE (kod_pocztowy,'^[0-9]{2,2}\-[0-9]{3,3}$')
+)
+);
+
+
+
+
 
 tworzenie sekwencji do generowania kluczy głównych poszczególnych tabel
 
