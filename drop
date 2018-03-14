@@ -1,0 +1,19 @@
+DROP TRIGGER skierowanie_tr;
+DROP TRIGGER recepta_tr;
+DROP TRIGGER wizyta_tr;
+DROP TRIGGER wizyty_domowe_tr;
+DROP TRIGGER cennik_tr;
+
+DROP SEQUENCE skierowanie_sq;
+DROP SEQUENCE recepta_sq;
+DROP SEQUENCE wizyta_sq;
+DROP SEQUENCE wizyty_domowe_sq;
+DROP SEQUENCE cennik_sq;
+
+
+DROP TABLE recepta;
+DROP TABLE skierowanie;
+DROP TABLE wizyta;
+DROP TABLE wizyty_domowe;
+DROP TABLE pacjent;
+DROP TABLE cennik_wizyt_domowych;
