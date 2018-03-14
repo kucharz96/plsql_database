@@ -22,7 +22,33 @@ miejscowosc = INITCAP(miejscowosc) AND
 REGEXP_LIKE (kod_pocztowy,'^[0-9]{2,2}\-[0-9]{3,3}$')
 )
 );
+ 
+ CREATE TABLE recepta(
+nr_recepty INT NOT NULL,
+id_lekarza INT NOT NULL ,
+pesel_pacjenta NUMBER(11) NOT NULL ,
+data DATE DEFAULT SYSDATE,
+opis VARCHAR(200) NOT NULL ,
+CONSTRAINT pk_recepta PRIMARY KEY(nr_recepty),
+CONSTRAINT fk1_recepta FOREIGN KEY (id_lekarza) REFERENCES lekarz(id_lekarza) ON DELETE CASCADE,
+CONSTRAINT fk2_recepta FOREIGN KEY (pesel_pacjenta) REFERENCES pacjent(pesel) ON DELETE CASCADE,
+CONSTRAINT check_recepta CHECK (pesel_pacjenta LIKE '___________' )
+);
 
+
+
+CREATE TABLE skierowanie(
+nr_skierowania INT NOT NULL,
+id_lekarza INT NOT NULL ,
+pesel_pacjenta NUMBER(11) NOT NULL ,
+data DATE DEFAULT SYSDATE,
+cel_skierowania VARCHAR(200) NOT NULL,
+opis_skierowania VARCHAR(200),
+CONSTRAINT pk_skierowanie PRIMARY KEY(nr_skierowania),
+CONSTRAINT fk1_skierowanie FOREIGN KEY (id_lekarza) REFERENCES lekarz(id_lekarza) ON DELETE CASCADE,
+CONSTRAINT fk2_skierowanie FOREIGN KEY (pesel_pacjenta) REFERENCES pacjent(pesel) ON DELETE CASCADE,
+CONSTRAINT check_skierowanie CHECK (pesel_pacjenta LIKE '___________' )
+);
 
 
 
