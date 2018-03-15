@@ -20,3 +20,37 @@ INSERT INTO cennik_wizyt_domowych(cena) VALUES (85.00);
 INSERT INTO cennik_wizyt_domowych(cena) VALUES (95.00);
 INSERT INTO cennik_wizyt_domowych(cena) VALUES (100.00);
 INSERT INTO cennik_wizyt_domowych(cena) VALUES (800.00);
+
+INSERT INTO skierowanie(id_lekarza,pesel_pacjenta,cel_skierowania,opis_skierowania)
+values (0,'60101131850','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet');
+INSERT INTO skierowanie(id_lekarza,pesel_pacjenta,cel_skierowania,opis_skierowania)
+values (1,'61083043278','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet');
+INSERT INTO skierowanie(id_lekarza,pesel_pacjenta,cel_skierowania,opis_skierowania)
+values (2,'77031415260','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet');
+INSERT INTO skierowanie(id_lekarza,pesel_pacjenta,cel_skierowania,opis_skierowania)
+values (3,'36122481500','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet');
+INSERT INTO skierowanie(id_lekarza,pesel_pacjenta,cel_skierowania,opis_skierowania)
+values (4,'64011474722','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet');
+INSERT INTO skierowanie(id_lekarza,pesel_pacjenta,cel_skierowania,opis_skierowania)
+values (5,'97020380052','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet');
+INSERT INTO skierowanie(id_lekarza,pesel_pacjenta,cel_skierowania,opis_skierowania)
+values (6,'40100390663','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet');
+INSERT INTO skierowanie(id_lekarza,pesel_pacjenta,cel_skierowania,opis_skierowania)
+values (7,'75120134409','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet');
+INSERT INTO skierowanie(id_lekarza,pesel_pacjenta,cel_skierowania,opis_skierowania)
+values (8,'87062835210','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet');
+INSERT INTO skierowanie(id_lekarza,pesel_pacjenta,cel_skierowania,opis_skierowania)
+values (9,'81121188828','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet');
+
+INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (0,'60101131850','Lorem ipsum dolor sit amet');
+INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (1,'61083043278','Lorem ipsum dolor sit amet');
+INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (2,'77031415260','Lorem ipsum dolor sit amet');
+INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (3,'36122481500','Lorem ipsum dolor sit amet');
+INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (4,'64011474722','Lorem ipsum dolor sit amet');
+INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (5,'97020380052','Lorem ipsum dolor sit amet');
+INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (6,'40100390663','Lorem ipsum dolor sit amet');
+INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (7,'75120134409','Lorem ipsum dolor sit amet');
+INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (8,'87062835210','Lorem ipsum dolor sit amet');
+INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (9,'81121188828','Lorem ipsum dolor sit amet');
+
+
