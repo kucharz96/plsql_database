@@ -33,3 +33,23 @@ BEGIN
 SELECT cennik_sq.NEXTVAL INTO :new.typ_wizyty FROM dual;
 END;
 /
+----WYZWALACZ NA TABELĘ PRACOWNICY_INFORMACJE------
+CREATE TRIGGER prac_infor_trigg
+BEFORE INSERT
+ON pracownicy_informacje
+FOR EACH ROW
+BEGIN
+  SELECT sekw_pracownicy_informacje.nextval into :new.id_pracownika 
+  FROM DUAL;
+END;
+/
+----WYZWALACZ NA TABELE DYZURY---
+CREATE TRIGGER dyz_trigg
+BEFORE INSERT
+ON dyzury
+FOR EACH ROW
+BEGIN
+  SELECT sekw_dyzury.nextval INTO :new.id_dyzuru
+  FROM DUAL;
+END;
+/
