@@ -53,4 +53,91 @@ INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (7,'75120134409','Lor
 INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (8,'87062835210','Lorem ipsum dolor sit amet');
 INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (9,'81121188828','Lorem ipsum dolor sit amet');
 
-
+--Dane dla pracownicy_informacje--
+ INSERT INTO pracownicy_informacje(ulica, numer_domu, numer_mieszkania, kod_pocztowy, miejscowosc, pesel)
+    VALUES('Misia', 11, 10, '15-010', 'Knyszyn', 12345678912);
+  INSERT INTO pracownicy_informacje(ulica, numer_domu, numer_mieszkania, kod_pocztowy, miejscowosc, pesel)
+    VALUES('Misib', 20, 15, '15-011', 'Knyszynowo', 12345678911);
+  INSERT INTO pracownicy_informacje(ulica, numer_domu, numer_mieszkania, kod_pocztowy, miejscowosc, pesel)
+    VALUES('Kisia', 10, 10, '15-110', 'Knyszynka', 12345678913);
+  INSERT INTO pracownicy_informacje(ulica, numer_domu, numer_mieszkania, kod_pocztowy, miejscowosc, pesel)
+    VALUES('Misiaczkowa', 15, 11, '15-011', 'Knyszyn', 12345678914);
+  INSERT INTO pracownicy_informacje(ulica, numer_domu, numer_mieszkania, kod_pocztowy, miejscowosc, pesel)
+    VALUES('Misiawowa', 30, 1, '16-001', 'Warszawa', 12345678915);
+  INSERT INTO pracownicy_informacje(ulica, numer_domu, numer_mieszkania, kod_pocztowy, miejscowosc, pesel)
+    VALUES('Lipowa', 12, 18, '20-004', 'Szczecin', 12345678916);
+  INSERT INTO pracownicy_informacje(ulica, numer_domu, numer_mieszkania, kod_pocztowy, miejscowosc, pesel)
+    VALUES('Sarnia', 11, null, '15-200', 'Gdynia', 12345678917);
+  INSERT INTO pracownicy_informacje(ulica, numer_domu, numer_mieszkania, kod_pocztowy, miejscowosc, pesel)
+    VALUES('Krucza', 25, null, '30-049', 'Tczew', 12345678918);
+  INSERT INTO pracownicy_informacje(ulica, numer_domu, numer_mieszkania, kod_pocztowy, miejscowosc, pesel)
+    VALUES('Latarniania', 13, 13, '23-999', 'Wroclaw', 12345678919);
+  INSERT INTO pracownicy_informacje(ulica, numer_domu, numer_mieszkania, kod_pocztowy, miejscowosc, pesel)
+    VALUES('Widlowa', 49, 34, '20-090', 'Kraków', 12345678910);
+    
+   --Dane dla lekarz--
+  INSERT INTO lekarz
+    values (0, 'Stefan', 'Macko', 32, 15, 123456789, 5);
+  INSERT INTO lekarz
+    values (1, 'Katarzyna', 'Kuska', 28, 14, 234567890, 3);
+  INSERT INTO lekarz
+    values (2, 'Marcelina', 'Bakan', 40, 13, 111111111, 10);
+  INSERT INTO lekarz
+    values (3, 'Elzbieta', 'Trusko', 52, 20, 222222222, 20);
+  INSERT INTO lekarz
+    values (4, 'Kamil', 'Jarko', 25, 10, 333333333, 1);
+  INSERT INTO lekarz
+    values (5, 'Michal', 'Bombka', 37, 12, 444444444, 5);
+  INSERT INTO lekarz
+    values (6, 'Krzysztof', 'Zak', 40, 5, 555555555, 12);
+  INSERT INTO lekarz
+    values (7, 'Marek', 'Krosko', 60, 2, 666666666, 30);
+  INSERT INTO lekarz
+    values (8, 'Stanislaw', 'Michacz', 35, 4, 777777777, 10);
+  INSERT INTO lekarz
+    values (9, 'Krystyna', 'Alkicz', 29, 9, 888888888, 2); 
+   
+   --Dane dla PIELEGNIARKA--
+   INSERT INTO pielegniarka
+    values (10, 'Krystyna', 'Kiszko', 40, 10, 111111112);
+  INSERT INTO pielegniarka
+    values (11, 'Anita', 'Gardias', 35, 5, 222222221);
+  INSERT INTO pielegniarka
+    values (12, 'Stefania', 'Wik', 53, 20, 333333331);
+  INSERT INTO lekarz
+    values (13, 'Anna', 'Miska', 29, 3, 444444441);
+  INSERT INTO lekarz
+    values (14, 'Marta', 'Odach', 30, 3, 555555551);
+  INSERT INTO lekarz
+    values (15, 'Zuzanna', 'Pilch', 33, 5, 666666661);
+  INSERT INTO lekarz
+    values (16, 'Anna', 'Nataniewicz',  43, 7, 777777771);
+  INSERT INTO lekarz
+    values (17, 'Grazyna', 'Januszowicz', 55, 15, 888888881);
+  INSERT INTO lekarz
+    values (18, 'Agnieszka', 'Placzkowicz', 39, 10, 99999991);
+  INSERT INTO lekarz
+    values (19, 'Karolina', 'Zygmunt' , 45, 12, 121212122); 
+    
+   --Dane dla DYZURY--
+   insert into dyzury(id_pracownika, dzien_tygodnia, godzina_rozpoczecia, godzina_zakonczenia)
+    values(1, 'Poniedzialek', to_dsinterval('0 10:00:00'), to_dsinterval('0 18:00:00'));
+  insert into dyzury(id_pracownika, dzien_tygodnia, godzina_rozpoczecia, godzina_zakonczenia)
+    values(1, 'Sroda', to_dsinterval('0 08:00:00'), to_dsinterval('0 15:00:00'));
+  insert into dyzury(id_pracownika, dzien_tygodnia, godzina_rozpoczecia, godzina_zakonczenia)
+    values(1, 'Piatek', to_dsinterval('0 10:00:00'), to_dsinterval('0 14:00:00'));
+  insert into dyzury(id_pracownika, dzien_tygodnia, godzina_rozpoczecia, godzina_zakonczenia)
+    values(2, 'Poniedzialek', to_dsinterval('0 10:00:00'), to_dsinterval('0 18:00:00'));
+  insert into dyzury(id_pracownika, dzien_tygodnia, godzina_rozpoczecia, godzina_zakonczenia)
+    values(2, 'Wtorek', to_dsinterval('0 12:00:00'), to_dsinterval('0 18:00:00'));
+  insert into dyzury(id_pracownika, dzien_tygodnia, godzina_rozpoczecia, godzina_zakonczenia)
+    values(3, 'Czwartek', to_dsinterval('0 08:00:00'), to_dsinterval('0 16:00:00'));
+  insert into dyzury(id_pracownika, dzien_tygodnia, godzina_rozpoczecia, godzina_zakonczenia)
+    values(3, 'Piatek', to_dsinterval('0 10:00:00'), to_dsinterval('0 16:00:00'));
+  insert into dyzury(id_pracownika, dzien_tygodnia, godzina_rozpoczecia, godzina_zakonczenia)
+    values(4, 'Sroda', to_dsinterval('0 08:00:00'), to_dsinterval('0 16:00:00'));
+  insert into dyzury(id_pracownika, dzien_tygodnia, godzina_rozpoczecia, godzina_zakonczenia)
+    values(4, 'Czwartek', to_dsinterval('0 12:00:00'), to_dsinterval('0 18:00:00'));
+  insert into dyzury(id_pracownika, dzien_tygodnia, godzina_rozpoczecia, godzina_zakonczenia)
+    values(5, 'Piatek', to_dsinterval('0 08:00:00'), to_dsinterval('0 16:00:00'));
+   
