@@ -107,11 +107,11 @@ CREATE TABLE PRACOWNICY_INFORMACJE
   numer_mieszkania number(3),
   kod_pocztowy varchar2(6) not null,
   miejscowosc varchar2(20) not null,
-  pesel number(11) unique,
+  pesel varchar2(11) unique,
   CONSTRAINT kg_prac_inf PRIMARY KEY (id_pracownika),
   CONSTRAINT spr_informacji_prac_inf CHECK
     (
-      pesel like '___________' and
+      REGEXP_LIKE (pesel,'^[0-9]{11,11}$') and
       REGEXP_LIKE (kod_pocztowy,'^[0-9]{2,2}\-[0-9]{3,3}$') and
       miejscowosc = INITCAP(miejscowosc)
     )
