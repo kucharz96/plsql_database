@@ -9,17 +9,17 @@ INSERT INTO pacjent VALUES ('75120134409','Kinga','Rutkowska','Pstrągowa',17,18
 INSERT INTO pacjent VALUES ('87062835210','Ryszard','Kowalczyk','Piaskowa',123,'','Katowice','20-420');
 INSERT INTO pacjent VALUES ('81121188828','Konstancja','Kozłowska','Jęczmienna',14,'','Olsztyn','10-814');
 
-INSERT INTO cennik_wizyt_domowych(cena) VALUES (20.00);
-INSERT INTO cennik_wizyt_domowych(cena) VALUES (85.00);
-INSERT INTO cennik_wizyt_domowych(cena) VALUES (95.00);
-INSERT INTO cennik_wizyt_domowych(cena) VALUES (45.00);
-INSERT INTO cennik_wizyt_domowych(cena) VALUES (120.00);
-INSERT INTO cennik_wizyt_domowych(cena) VALUES (450.00);
-INSERT INTO cennik_wizyt_domowych(cena) VALUES (600.00);
-INSERT INTO cennik_wizyt_domowych(cena) VALUES (85.00);
-INSERT INTO cennik_wizyt_domowych(cena) VALUES (95.00);
-INSERT INTO cennik_wizyt_domowych(cena) VALUES (100.00);
-INSERT INTO cennik_wizyt_domowych(cena) VALUES (800.00);
+INSERT INTO cennik_wizyt_domowych(cena,opis) VALUES (20.00,'Lorem ipsum dolor sit amet');
+INSERT INTO cennik_wizyt_domowych(cena,opis) VALUES (85.00,'Lorem ipsum dolor sit amet');
+INSERT INTO cennik_wizyt_domowych(cena,opis) VALUES (95.00,'Lorem ipsum dolor sit amet');
+INSERT INTO cennik_wizyt_domowych(cena,opis) VALUES (45.00,'Lorem ipsum dolor sit amet');
+INSERT INTO cennik_wizyt_domowych(cena,opis) VALUES (120.00,'Lorem ipsum dolor sit amet');
+INSERT INTO cennik_wizyt_domowych(cena,opis) VALUES (450.00,'Lorem ipsum dolor sit amet');
+INSERT INTO cennik_wizyt_domowych(cena,opis) VALUES (600.00,'Lorem ipsum dolor sit amet');
+INSERT INTO cennik_wizyt_domowych(cena,opis) VALUES (85.0,'Lorem ipsum dolor sit amet'0);
+INSERT INTO cennik_wizyt_domowych(cena,opis) VALUES (95.00,'Lorem ipsum dolor sit amet');
+INSERT INTO cennik_wizyt_domowych(cena,opis) VALUES (100.00,'Lorem ipsum dolor sit amet');
+INSERT INTO cennik_wizyt_domowych(cena,opis) VALUES (800.00,'Lorem ipsum dolor sit amet');
 
 INSERT INTO skierowanie(id_lekarza,pesel_pacjenta,cel_skierowania,opis_skierowania)
 values (0,'60101131850','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet');
