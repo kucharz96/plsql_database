@@ -150,6 +150,6 @@ CREATE TABLE DYZURY
   CONSTRAINT dyz_poprawnosc CHECK
   (
    godzina_rozpoczecia < godzina_zakonczenia
-   and dzien_tygodnia in ('Poniedzialek', 'Wtorek', 'Sroda', 'Czwartek, 'Piatek')
+   and dzien_tygodnia in ('Poniedzialek', 'Wtorek', 'Sroda', 'Czwartek', 'Piatek')
   )
 );
