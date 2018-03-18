@@ -4,7 +4,7 @@ DROP TRIGGER wizyta_tr;
 DROP TRIGGER wizyty_domowe_tr;
 DROP TRIGGER cennik_tr;
 DROP TRIGGER pracownicy_informacje_tr;
-DROP TRIGGER dyzury_tr
+DROP TRIGGER dyzury_tr;
 
 DROP SEQUENCE skierowanie_sq;
 DROP SEQUENCE recepta_sq;
@@ -23,5 +23,5 @@ DROP TABLE pacjent;
 DROP TABLE cennik_wizyt_domowych;
 DROP TABLE lekarz;
 DROP TABLE pielegniarka;
-DROP TABLE pracownicy_informacje;
 DROP TABLE dyzury;
+DROP TABLE pracownicy_informacje;
