@@ -59,6 +59,7 @@ CONSTRAINT check_wizyta CHECK (REGEXP_LIKE (pesel_pacjenta,'^[0-9]{11,11}$') )
 CREATE TABLE cennik_wizyt_domowych(
 typ_wizyty int NOT NULL,
 cena FLOAT NOT NULL,
+opis VARCHAR(200) NOT NULL,
 CONSTRAINT pk_cennik PRIMARY KEY(typ_wizyty),
 CONSTRAINT check_cennik CHECK (cena > 0)
 );
