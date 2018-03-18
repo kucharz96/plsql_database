@@ -23,19 +23,14 @@ MINVALUE 0
 START WITH 0
 INCREMENT BY 1;
 
---Sekwencja TABELA PRACOWNICY_INFORMACJE--
- CREATE SEQUENCE pracownicy_informacje_sq
+CREATE SEQUENCE pracownicy_informacje_sq
     minvalue 0
     start with 0
     increment by 1
-    nocycle
-    nocache
     ;
--- Sekwencja TABELA DYZURY
- CREATE SEQUENCE dyzury_sq
+
+CREATE SEQUENCE dyzury_sq
     minvalue 0
     start with 0
     increment by 1
-    nocycle
-    nocache
     ;
