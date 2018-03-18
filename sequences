@@ -25,6 +25,7 @@ INCREMENT BY 1;
 
 --Sekwencja TABELA PRACOWNICY_INFORMACJE--
  CREATE SEQUENCE sekw_pracownicy_informacje
+    minvalue 0
     start with 0
     increment by 1
     nocycle
@@ -32,6 +33,7 @@ INCREMENT BY 1;
     ;
 -- Sekwencja TABELA DYZURY
  CREATE SEQUENCE sekw_dyzury
+    minvalue 0
     start with 0
     increment by 1
     nocycle
