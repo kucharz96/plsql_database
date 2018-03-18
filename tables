@@ -123,8 +123,8 @@ CREATE TABLE PIELEGNIARKA
   imie varchar2(20) not null,
   nazwisko varchar2(20) not null,
   wiek number(2) not null,
-  telefon number(9) not null,
   staz number(2) not null,
+  telefon number(9) not null,
   CONSTRAINT kg_pielegniarka PRIMARY KEY (id_pielegniarki),
   CONSTRAINT ko_pielegniarka foreign key(id_pielegniarki) references pracownicy_informacje(id_pracownika) on delete cascade,
   CONSTRAINT sprawdzenie_pielegniarka CHECK
@@ -149,5 +149,6 @@ CREATE TABLE DYZURY
   CONSTRAINT dyz_poprawnosc CHECK
   (
    godzina_rozpoczecia < godzina_zakonczenia
+   and dzien_tygodnia in ('Poniedzialek', 'Wtorek', 'Sroda', 'Czwartek, 'Piatek')
   )
 );
