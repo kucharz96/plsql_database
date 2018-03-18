@@ -141,3 +141,46 @@ INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (9,'81121188828','Lor
   insert into dyzury(id_pracownika, dzien_tygodnia, godzina_rozpoczecia, godzina_zakonczenia)
     values(5, 'Piatek', to_dsinterval('0 08:00:00'), to_dsinterval('0 16:00:00'));
    
+   ----Dane do tabeli WIZYTA---
+   INSERT INTO wizyta(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis)
+      VALUES(1, '60101131850', to_date('2018/03/12 10:00', 'YYYY/MM/DD HH:MI'), 'opis1');
+    INSERT INTO wizyta(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis)
+      VALUES(1, '61083043278', to_date('2018/03/12 10:20', 'YYYY/MM/DD HH:MI'), 'opis2');
+    INSERT INTO wizyta(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis)
+      VALUES(1, '36122481500', to_date('2018/03/12 10:50', 'YYYY/MM/DD HH:MI'), 'opis3');
+    INSERT INTO wizyta(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis)
+      VALUES(1, '77031415260', to_date('2018/03/12 11:20', 'YYYY/MM/DD HH:MI'), 'opis4');
+    INSERT INTO wizyta(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis)
+      VALUES(1, '97020380052', to_date('2018/03/12 14:00', 'YYYY/MM/DD HH:MI'), 'opis11');
+    INSERT INTO wizyta(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis)
+      VALUES(2, '40100390663', to_date('2018/03/12 14:00', 'YYYY/MM/DD HH:MI'), 'opis22');
+    INSERT INTO wizyta(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis)
+      VALUES(2, '75120134409', to_date('2018/03/12 14:30', 'YYYY/MM/DD HH:MI'), 'opis23');
+    INSERT INTO wizyta(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis)
+      VALUES(2, '87062835210', to_date('2018/03/12 14:50', 'YYYY/MM/DD HH:MI'), 'opis232332');
+    INSERT INTO wizyta(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis)
+      VALUES(2, '81121188828', to_date('2018/03/12 15:30', 'YYYY/MM/DD HH:MI'), 'opis2222');
+    INSERT INTO wizyta(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis)
+      VALUES(2, '60101131850', to_date('2018/03/12 16:30', 'YYYY/MM/DD HH:MI'), 'opis1211');
+      
+     --Dane do tabeli wizyta_domowa--
+     INSERT INTO wizyty_domowe(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis, typ_wizyty)
+      VALUES(6, '60101131850', to_date('2018/03/13 10:00', 'YYYY/MM/DD HH:MI'), 'opis1', 0);
+    INSERT INTO wizyty_domowe(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis, typ_wizyty)
+      VALUES(6, '61083043278', to_date('2018/03/13 11:00', 'YYYY/MM/DD HH:MI'), 'opis2', 0);
+    INSERT INTO wizyty_domowe(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis, typ_wizyty)
+      VALUES(6, '36122481500', to_date('2018/03/13 12:00', 'YYYY/MM/DD HH:MI'), 'opis3', 1);
+     INSERT INTO wizyty_domowe(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis, typ_wizyty)
+      VALUES(6, '77031415260', to_date('2018/03/13 14:00', 'YYYY/MM/DD HH:MI'), 'opis4', 1);
+     INSERT INTO wizyty_domowe(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis, typ_wizyty)
+      VALUES(6, '97020380052', to_date('2018/03/13 15:00', 'YYYY/MM/DD HH:MI'), 'opis5', 1);
+     INSERT INTO wizyty_domowe(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis, typ_wizyty)
+      VALUES(6, '40100390663', to_date('2018/03/13 16:00', 'YYYY/MM/DD HH:MI'), 'opis6', 2);
+     INSERT INTO wizyty_domowe(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis, typ_wizyty)
+      VALUES(7, '75120134409', to_date('2018/03/14 12:00', 'YYYY/MM/DD HH:MI'), 'opis7', 1);
+     INSERT INTO wizyty_domowe(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis, typ_wizyty)
+      VALUES(7, '36122481500', to_date('2018/03/14 15:00', 'YYYY/MM/DD HH:MI'), 'opis8', 4);
+     INSERT INTO wizyty_domowe(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis, typ_wizyty)
+      VALUES(7, '81121188828', to_date('2018/03/14 15:50', 'YYYY/MM/DD HH:MI'), 'opis9', 5);
+     INSERT INTO wizyty_domowe(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis, typ_wizyty)
+      VALUES(8, '36122481500', to_date('2018/03/16 12:00', 'YYYY/MM/DD HH:MI'), 'opis10', 7); 
