@@ -1,58 +1,3 @@
-INSERT INTO pacjent VALUES ('60101131850','Eustachy','Dudek','Nad Brzegiem',116,'','Gdańsk','80-638');
-INSERT INTO pacjent VALUES ('61083043278','Augustyn','Nowakowski','Wrzesińska',82,4,'Poznań','61-021');
-INSERT INTO pacjent VALUES ('77031415260','Gabriela','Kowalska','Leśnych Skrzatów',65,1,'Poznań','60-193');
-INSERT INTO pacjent VALUES ('36122481500','Wisława','Piotrowska','Floriańska',112,3,'Rybnik','44-217');
-INSERT INTO pacjent VALUES ('64011474722','Grażyna','Ostrowska','Barei Stanisława',122,23,'Warszawa','03-141');
-INSERT INTO pacjent VALUES ('97020380052','Kacper','Dąbrowski','Jugosłowiańska',56,11,'Wrocław','51-112');
-INSERT INTO pacjent VALUES ('40100390663','Wiola','Adamczyk','Baczyńskiego',100,10,'Jasło','38-201');
-INSERT INTO pacjent VALUES ('75120134409','Kinga','Rutkowska','Pstrągowa',17,18,'Katowice','40-748');
-INSERT INTO pacjent VALUES ('87062835210','Ryszard','Kowalczyk','Piaskowa',123,'','Katowice','20-420');
-INSERT INTO pacjent VALUES ('81121188828','Konstancja','Kozłowska','Jęczmienna',14,'','Olsztyn','10-814');
-
-INSERT INTO cennik_wizyt_domowych(cena,opis) VALUES (20.00,'Lorem ipsum dolor sit amet');
-INSERT INTO cennik_wizyt_domowych(cena,opis) VALUES (85.00,'Lorem ipsum dolor sit amet');
-INSERT INTO cennik_wizyt_domowych(cena,opis) VALUES (95.00,'Lorem ipsum dolor sit amet');
-INSERT INTO cennik_wizyt_domowych(cena,opis) VALUES (45.00,'Lorem ipsum dolor sit amet');
-INSERT INTO cennik_wizyt_domowych(cena,opis) VALUES (120.00,'Lorem ipsum dolor sit amet');
-INSERT INTO cennik_wizyt_domowych(cena,opis) VALUES (450.00,'Lorem ipsum dolor sit amet');
-INSERT INTO cennik_wizyt_domowych(cena,opis) VALUES (600.00,'Lorem ipsum dolor sit amet');
-INSERT INTO cennik_wizyt_domowych(cena,opis) VALUES (85.0,'Lorem ipsum dolor sit amet'0);
-INSERT INTO cennik_wizyt_domowych(cena,opis) VALUES (95.00,'Lorem ipsum dolor sit amet');
-INSERT INTO cennik_wizyt_domowych(cena,opis) VALUES (100.00,'Lorem ipsum dolor sit amet');
-INSERT INTO cennik_wizyt_domowych(cena,opis) VALUES (800.00,'Lorem ipsum dolor sit amet');
-
-INSERT INTO skierowanie(id_lekarza,pesel_pacjenta,cel_skierowania,opis_skierowania)
-values (0,'60101131850','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet');
-INSERT INTO skierowanie(id_lekarza,pesel_pacjenta,cel_skierowania,opis_skierowania)
-values (1,'61083043278','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet');
-INSERT INTO skierowanie(id_lekarza,pesel_pacjenta,cel_skierowania,opis_skierowania)
-values (2,'77031415260','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet');
-INSERT INTO skierowanie(id_lekarza,pesel_pacjenta,cel_skierowania,opis_skierowania)
-values (3,'36122481500','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet');
-INSERT INTO skierowanie(id_lekarza,pesel_pacjenta,cel_skierowania,opis_skierowania)
-values (4,'64011474722','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet');
-INSERT INTO skierowanie(id_lekarza,pesel_pacjenta,cel_skierowania,opis_skierowania)
-values (5,'97020380052','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet');
-INSERT INTO skierowanie(id_lekarza,pesel_pacjenta,cel_skierowania,opis_skierowania)
-values (6,'40100390663','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet');
-INSERT INTO skierowanie(id_lekarza,pesel_pacjenta,cel_skierowania,opis_skierowania)
-values (7,'75120134409','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet');
-INSERT INTO skierowanie(id_lekarza,pesel_pacjenta,cel_skierowania,opis_skierowania)
-values (8,'87062835210','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet');
-INSERT INTO skierowanie(id_lekarza,pesel_pacjenta,cel_skierowania,opis_skierowania)
-values (9,'81121188828','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet');
-
-INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (0,'60101131850','Lorem ipsum dolor sit amet');
-INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (1,'61083043278','Lorem ipsum dolor sit amet');
-INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (2,'77031415260','Lorem ipsum dolor sit amet');
-INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (3,'36122481500','Lorem ipsum dolor sit amet');
-INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (4,'64011474722','Lorem ipsum dolor sit amet');
-INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (5,'97020380052','Lorem ipsum dolor sit amet');
-INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (6,'40100390663','Lorem ipsum dolor sit amet');
-INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (7,'75120134409','Lorem ipsum dolor sit amet');
-INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (8,'87062835210','Lorem ipsum dolor sit amet');
-INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (9,'81121188828','Lorem ipsum dolor sit amet');
-
 --Dane dla pracownicy_informacje--
  INSERT INTO pracownicy_informacje(ulica, numer_domu, numer_mieszkania, kod_pocztowy, miejscowosc, pesel)
     VALUES('Misia', 11, 10, '15-010', 'Knyszyn', '12345678912');
@@ -74,9 +19,30 @@ INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (9,'81121188828','Lor
     VALUES('Latarniania', 13, 13, '23-999', 'Wroclaw', '12345678919');
   INSERT INTO pracownicy_informacje(ulica, numer_domu, numer_mieszkania, kod_pocztowy, miejscowosc, pesel)
     VALUES('Widlowa', 49, 34, '20-090', 'Kraków', '12345678910');
-    
-   --Dane dla lekarz--
-  INSERT INTO lekarz
+  INSERT INTO pracownicy_informacje(ulica, numer_domu, numer_mieszkania, kod_pocztowy, miejscowosc, pesel)
+    VALUES('Widlowa', 50, null, '20-090', 'Kraków', '12345678922');
+   INSERT INTO pracownicy_informacje(ulica, numer_domu, numer_mieszkania, kod_pocztowy, miejscowosc, pesel)
+    VALUES('Przemyslowa', 50, null, '30-090', 'Suwalki', '12345678933');
+   INSERT INTO pracownicy_informacje(ulica, numer_domu, numer_mieszkania, kod_pocztowy, miejscowosc, pesel)
+    VALUES('Pawia', 20, null, '10-090', 'Gdynia', '12345678934');
+   INSERT INTO pracownicy_informacje(ulica, numer_domu, numer_mieszkania, kod_pocztowy, miejscowosc, pesel)
+    VALUES('Szklankowa', 50, 25, '40-090', 'Wroclaw', '12345678944');
+   INSERT INTO pracownicy_informacje(ulica, numer_domu, numer_mieszkania, kod_pocztowy, miejscowosc, pesel)
+    VALUES('Szczawiowa', 11, null, '15-420', 'Kraków', '12345678955');
+   INSERT INTO pracownicy_informacje(ulica, numer_domu, numer_mieszkania, kod_pocztowy, miejscowosc, pesel)
+    VALUES('Mysia', 12, 9, '11-090', 'Elk', '12345678966');
+   INSERT INTO pracownicy_informacje(ulica, numer_domu, numer_mieszkania, kod_pocztowy, miejscowosc, pesel)
+    VALUES('Kocia', 23, 11, '34-090', 'Wroclaw', '12345678977');
+   INSERT INTO pracownicy_informacje(ulica, numer_domu, numer_mieszkania, kod_pocztowy, miejscowosc, pesel)
+    VALUES('Kleszczowa', 12, 12, '45-190', 'Zimnochy', '12345678988');
+   INSERT INTO pracownicy_informacje(ulica, numer_domu, numer_mieszkania, kod_pocztowy, miejscowosc, pesel)
+    VALUES('Sokola', 68, null, '30-010', 'Lublin', '12345678999');
+   INSERT INTO pracownicy_informacje(ulica, numer_domu, numer_mieszkania, kod_pocztowy, miejscowosc, pesel)
+    VALUES('Premierowa', 14, 12, '15-019', 'Kraków', '22345678922');
+
+---Dane do tabeli lekarz---------
+
+ INSERT INTO lekarz
     values (0, 'Stefan', 'Macko', 32, 15, 123456789, 5);
   INSERT INTO lekarz
     values (1, 'Katarzyna', 'Kuska', 28, 14, 234567890, 3);
@@ -96,31 +62,31 @@ INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (9,'81121188828','Lor
     values (8, 'Stanislaw', 'Michacz', 35, 4, 777777777, 10);
   INSERT INTO lekarz
     values (9, 'Krystyna', 'Alkicz', 29, 9, 888888888, 2); 
-   
-   --Dane dla PIELEGNIARKA--
+
+ --Dane dla PIELEGNIARKA--
    INSERT INTO pielegniarka
     values (10, 'Krystyna', 'Kiszko', 40, 10, 111111112);
   INSERT INTO pielegniarka
     values (11, 'Anita', 'Gardias', 35, 5, 222222221);
   INSERT INTO pielegniarka
     values (12, 'Stefania', 'Wik', 53, 20, 333333331);
-  INSERT INTO lekarz
+  INSERT INTO pielegniarka
     values (13, 'Anna', 'Miska', 29, 3, 444444441);
-  INSERT INTO lekarz
+  INSERT INTO pielegniarka
     values (14, 'Marta', 'Odach', 30, 3, 555555551);
-  INSERT INTO lekarz
+  INSERT INTO pielegniarka
     values (15, 'Zuzanna', 'Pilch', 33, 5, 666666661);
-  INSERT INTO lekarz
+  INSERT INTO pielegniarka
     values (16, 'Anna', 'Nataniewicz',  43, 7, 777777771);
-  INSERT INTO lekarz
+  INSERT INTO pielegniarka
     values (17, 'Grazyna', 'Januszowicz', 55, 15, 888888881);
-  INSERT INTO lekarz
-    values (18, 'Agnieszka', 'Placzkowicz', 39, 10, 99999991);
-  INSERT INTO lekarz
+  INSERT INTO pielegniarka
+    values (18, 'Agnieszka', 'Placzkowicz', 39, 10, 999999919);
+  INSERT INTO pielegniarka
     values (19, 'Karolina', 'Zygmunt' , 45, 12, 121212122); 
     
-   --Dane dla DYZURY--
-   insert into dyzury(id_pracownika, dzien_tygodnia, godzina_rozpoczecia, godzina_zakonczenia)
+    --Dane do tabeli DYZURY
+  insert into dyzury(id_pracownika, dzien_tygodnia, godzina_rozpoczecia, godzina_zakonczenia)
     values(1, 'Poniedzialek', to_dsinterval('0 10:00:00'), to_dsinterval('0 18:00:00'));
   insert into dyzury(id_pracownika, dzien_tygodnia, godzina_rozpoczecia, godzina_zakonczenia)
     values(1, 'Sroda', to_dsinterval('0 08:00:00'), to_dsinterval('0 15:00:00'));
@@ -140,47 +106,105 @@ INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (9,'81121188828','Lor
     values(4, 'Czwartek', to_dsinterval('0 12:00:00'), to_dsinterval('0 18:00:00'));
   insert into dyzury(id_pracownika, dzien_tygodnia, godzina_rozpoczecia, godzina_zakonczenia)
     values(5, 'Piatek', to_dsinterval('0 08:00:00'), to_dsinterval('0 16:00:00'));
-   
-   ----Dane do tabeli WIZYTA---
-   INSERT INTO wizyta(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis)
-      VALUES(1, '60101131850', to_date('2018/03/12 10:00', 'YYYY/MM/DD HH:MI'), 'opis1');
+
+  --Dane do tabeli PACJENT
+INSERT INTO pacjent VALUES ('60101131850','Eustachy','Dudek','Nad Brzegiem',116,'','Gdańsk','80-638');
+INSERT INTO pacjent VALUES ('61083043278','Augustyn','Nowakowski','Wrzesińska',82,4,'Poznań','61-021');
+INSERT INTO pacjent VALUES ('77031415260','Gabriela','Kowalska','Leśnych Skrzatów',65,1,'Poznań','60-193');
+INSERT INTO pacjent VALUES ('36122481500','Wisława','Piotrowska','Floriańska',112,3,'Rybnik','44-217');
+INSERT INTO pacjent VALUES ('64011474722','Grażyna','Ostrowska','Barei Stanisława',122,23,'Warszawa','03-141');
+INSERT INTO pacjent VALUES ('97020380052','Kacper','Dąbrowski','Jugosłowiańska',56,11,'Wrocław','51-112');
+INSERT INTO pacjent VALUES ('40100390663','Wiola','Adamczyk','Baczyńskiego',100,10,'Jasło','38-201');
+INSERT INTO pacjent VALUES ('75120134409','Kinga','Rutkowska','Pstrągowa',17,18,'Katowice','40-748');
+INSERT INTO pacjent VALUES ('87062835210','Ryszard','Kowalczyk','Piaskowa',123,'','Katowice','20-420');
+INSERT INTO pacjent VALUES ('81121188828','Konstancja','Kozłowska','Jęczmienna',14,'','Olsztyn','10-814');
+
+--Dane do tabeli SKIEROWANIE
+INSERT INTO skierowanie(id_lekarza,pesel_pacjenta,cel_skierowania,opis_skierowania)
+values (0,'60101131850','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet');
+INSERT INTO skierowanie(id_lekarza,pesel_pacjenta,cel_skierowania,opis_skierowania)
+values (1,'61083043278','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet');
+INSERT INTO skierowanie(id_lekarza,pesel_pacjenta,cel_skierowania,opis_skierowania)
+values (2,'77031415260','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet');
+INSERT INTO skierowanie(id_lekarza,pesel_pacjenta,cel_skierowania,opis_skierowania)
+values (3,'36122481500','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet');
+INSERT INTO skierowanie(id_lekarza,pesel_pacjenta,cel_skierowania,opis_skierowania)
+values (4,'64011474722','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet');
+INSERT INTO skierowanie(id_lekarza,pesel_pacjenta,cel_skierowania,opis_skierowania)
+values (5,'97020380052','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet');
+INSERT INTO skierowanie(id_lekarza,pesel_pacjenta,cel_skierowania,opis_skierowania)
+values (6,'40100390663','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet');
+INSERT INTO skierowanie(id_lekarza,pesel_pacjenta,cel_skierowania,opis_skierowania)
+values (7,'75120134409','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet');
+INSERT INTO skierowanie(id_lekarza,pesel_pacjenta,cel_skierowania,opis_skierowania)
+values (8,'87062835210','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet');
+INSERT INTO skierowanie(id_lekarza,pesel_pacjenta,cel_skierowania,opis_skierowania)
+values (9,'81121188828','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet');
+
+--Dane do tabeli RECEPTA--
+INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (0,'60101131850','Lorem ipsum dolor sit amet');
+INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (1,'61083043278','Lorem ipsum dolor sit amet');
+INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (2,'77031415260','Lorem ipsum dolor sit amet');
+INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (3,'36122481500','Lorem ipsum dolor sit amet');
+INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (4,'64011474722','Lorem ipsum dolor sit amet');
+INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (5,'97020380052','Lorem ipsum dolor sit amet');
+INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (6,'40100390663','Lorem ipsum dolor sit amet');
+INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (7,'75120134409','Lorem ipsum dolor sit amet');
+INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (8,'87062835210','Lorem ipsum dolor sit amet');
+INSERT INTO recepta(id_lekarza,pesel_pacjenta,opis) values (9,'81121188828','Lorem ipsum dolor sit amet');
+
+--Dane do tabeli WIZYTA
+ INSERT INTO wizyta(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis)
+      VALUES(1, '60101131850', to_date('2018/03/12 10:00', 'YYYY/MM/DD HH24:MI'), 'opis1');
     INSERT INTO wizyta(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis)
-      VALUES(1, '61083043278', to_date('2018/03/12 10:20', 'YYYY/MM/DD HH:MI'), 'opis2');
+      VALUES(1, '61083043278', to_date('2018/03/12 10:20', 'YYYY/MM/DD HH24:MI'), 'opis2');
     INSERT INTO wizyta(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis)
-      VALUES(1, '36122481500', to_date('2018/03/12 10:50', 'YYYY/MM/DD HH:MI'), 'opis3');
+      VALUES(1, '36122481500', to_date('2018/03/12 10:50', 'YYYY/MM/DD HH24:MI'), 'opis3');
     INSERT INTO wizyta(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis)
-      VALUES(1, '77031415260', to_date('2018/03/12 11:20', 'YYYY/MM/DD HH:MI'), 'opis4');
+      VALUES(1, '77031415260', to_date('2018/03/12 11:20', 'YYYY/MM/DD HH24:MI'), 'opis4');
     INSERT INTO wizyta(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis)
-      VALUES(1, '97020380052', to_date('2018/03/12 14:00', 'YYYY/MM/DD HH:MI'), 'opis11');
+      VALUES(1, '97020380052', to_date('2018/03/12 14:00', 'YYYY/MM/DD HH24:MI'), 'opis11');
     INSERT INTO wizyta(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis)
-      VALUES(2, '40100390663', to_date('2018/03/12 14:00', 'YYYY/MM/DD HH:MI'), 'opis22');
+      VALUES(2, '40100390663', to_date('2018/03/12 14:00', 'YYYY/MM/DD HH24:MI'), 'opis22');
     INSERT INTO wizyta(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis)
-      VALUES(2, '75120134409', to_date('2018/03/12 14:30', 'YYYY/MM/DD HH:MI'), 'opis23');
+      VALUES(2, '75120134409', to_date('2018/03/12 14:30', 'YYYY/MM/DD HH24:MI'), 'opis23');
     INSERT INTO wizyta(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis)
-      VALUES(2, '87062835210', to_date('2018/03/12 14:50', 'YYYY/MM/DD HH:MI'), 'opis232332');
+      VALUES(2, '87062835210', to_date('2018/03/12 14:50', 'YYYY/MM/DD HH24:MI'), 'opis232332');
     INSERT INTO wizyta(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis)
-      VALUES(2, '81121188828', to_date('2018/03/12 15:30', 'YYYY/MM/DD HH:MI'), 'opis2222');
+      VALUES(2, '81121188828', to_date('2018/03/12 15:30', 'YYYY/MM/DD HH24:MI'), 'opis2222');
     INSERT INTO wizyta(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis)
-      VALUES(2, '60101131850', to_date('2018/03/12 16:30', 'YYYY/MM/DD HH:MI'), 'opis1211');
-      
-     --Dane do tabeli wizyta_domowa--
+      VALUES(2, '60101131850', to_date('2018/03/12 16:30', 'YYYY/MM/DD HH24:MI'), 'opis1211');
+
+--Dane do tabeli CENNIK_WIZYT_DOMOWYCH--
+INSERT INTO cennik_wizyt_domowych(cena,opis) VALUES (20.00,'Lorem ipsum dolor sit amet');
+INSERT INTO cennik_wizyt_domowych(cena,opis) VALUES (85.00,'Lorem ipsum dolor sit amet');
+INSERT INTO cennik_wizyt_domowych(cena,opis) VALUES (95.00,'Lorem ipsum dolor sit amet');
+INSERT INTO cennik_wizyt_domowych(cena,opis) VALUES (45.00,'Lorem ipsum dolor sit amet');
+INSERT INTO cennik_wizyt_domowych(cena,opis) VALUES (120.00,'Lorem ipsum dolor sit amet');
+INSERT INTO cennik_wizyt_domowych(cena,opis) VALUES (450.00,'Lorem ipsum dolor sit amet');
+INSERT INTO cennik_wizyt_domowych(cena,opis) VALUES (600.00,'Lorem ipsum dolor sit amet');
+INSERT INTO cennik_wizyt_domowych(cena,opis) VALUES (85.00,'Lorem ipsum dolor sit amet');
+INSERT INTO cennik_wizyt_domowych(cena,opis) VALUES (95.00,'Lorem ipsum dolor sit amet');
+INSERT INTO cennik_wizyt_domowych(cena,opis) VALUES (100.00,'Lorem ipsum dolor sit amet');
+INSERT INTO cennik_wizyt_domowych(cena,opis) VALUES (800.00,'Lorem ipsum dolor sit amet');
+--Dane do tabeli WIZYTA_DOMOWA--
      INSERT INTO wizyty_domowe(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis, typ_wizyty)
-      VALUES(6, '60101131850', to_date('2018/03/13 10:00', 'YYYY/MM/DD HH:MI'), 'opis1', 0);
+      VALUES(6, '60101131850', to_date('2018/03/13 10:00', 'YYYY/MM/DD HH24:MI'), 'opis1', 0);
     INSERT INTO wizyty_domowe(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis, typ_wizyty)
-      VALUES(6, '61083043278', to_date('2018/03/13 11:00', 'YYYY/MM/DD HH:MI'), 'opis2', 0);
+      VALUES(6, '61083043278', to_date('2018/03/13 11:00', 'YYYY/MM/DD HH24:MI'), 'opis2', 0);
     INSERT INTO wizyty_domowe(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis, typ_wizyty)
-      VALUES(6, '36122481500', to_date('2018/03/13 12:00', 'YYYY/MM/DD HH:MI'), 'opis3', 1);
+      VALUES(6, '36122481500', to_date('2018/03/13 12:00', 'YYYY/MM/DD HH24:MI'), 'opis3', 1);
      INSERT INTO wizyty_domowe(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis, typ_wizyty)
-      VALUES(6, '77031415260', to_date('2018/03/13 14:00', 'YYYY/MM/DD HH:MI'), 'opis4', 1);
+      VALUES(6, '77031415260', to_date('2018/03/13 14:00', 'YYYY/MM/DD HH24:MI'), 'opis4', 1);
      INSERT INTO wizyty_domowe(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis, typ_wizyty)
-      VALUES(6, '97020380052', to_date('2018/03/13 15:00', 'YYYY/MM/DD HH:MI'), 'opis5', 1);
+      VALUES(6, '97020380052', to_date('2018/03/13 15:00', 'YYYY/MM/DD HH24:MI'), 'opis5', 1);
      INSERT INTO wizyty_domowe(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis, typ_wizyty)
-      VALUES(6, '40100390663', to_date('2018/03/13 16:00', 'YYYY/MM/DD HH:MI'), 'opis6', 2);
+      VALUES(6, '40100390663', to_date('2018/03/13 16:00', 'YYYY/MM/DD HH24:MI'), 'opis6', 2);
      INSERT INTO wizyty_domowe(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis, typ_wizyty)
-      VALUES(7, '75120134409', to_date('2018/03/14 12:00', 'YYYY/MM/DD HH:MI'), 'opis7', 1);
+      VALUES(7, '75120134409', to_date('2018/03/14 12:00', 'YYYY/MM/DD HH24:MI'), 'opis7', 1);
      INSERT INTO wizyty_domowe(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis, typ_wizyty)
-      VALUES(7, '36122481500', to_date('2018/03/14 15:00', 'YYYY/MM/DD HH:MI'), 'opis8', 4);
+      VALUES(7, '36122481500', to_date('2018/03/14 15:00', 'YYYY/MM/DD HH24:MI'), 'opis8', 4);
      INSERT INTO wizyty_domowe(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis, typ_wizyty)
-      VALUES(7, '81121188828', to_date('2018/03/14 15:50', 'YYYY/MM/DD HH:MI'), 'opis9', 5);
+      VALUES(7, '81121188828', to_date('2018/03/14 15:50', 'YYYY/MM/DD HH24:MI'), 'opis9', 5);
      INSERT INTO wizyty_domowe(id_lekarza, pesel_pacjenta, data_godzina_wizyty, opis, typ_wizyty)
-      VALUES(8, '36122481500', to_date('2018/03/16 12:00', 'YYYY/MM/DD HH:MI'), 'opis10', 7); 
+      VALUES(8, '36122481500', to_date('2018/03/16 12:00', 'YYYY/MM/DD HH24:MI'), 'opis10', 7);
